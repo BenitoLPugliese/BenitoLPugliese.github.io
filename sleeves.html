@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Sensorized Sleeves – Knee OA Rehab</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header (optional: same as index) -->
+        <header id="header">
+            <a href="index.html" class="logo">← Back to Portfolio</a>
+        </header>
+
+        <<!-- Intro: Why knee sleeves? -->
+            <div id="main">
+                <section id="sleeves" class="main">
+                    <h2>Sensorized Sleeves for Adaptive Knee OA Rehabilitation</h2>
+
+                    <p>
+                        Knee osteoarthritis (OA) is among the leading causes of disability worldwide.
+                        It is characterized by joint pain, stiffness, and inflammation, which progressively
+                        limit mobility and reduce quality of life. While there is currently no cure,
+                        <strong>physical activity and exercise</strong> are the cornerstone of conservative management,
+                        helping slow disease progression and maintain function.
+                    </p>
+
+                    <p>
+                        However, the relationship between exercise and symptoms is delicate:
+                        insufficient activity limits benefits, whereas over-exercise can worsen pain, swelling,
+                        and inflammation. Today, the “optimal” dose of physical activity is usually found
+                        through <strong>trial and error</strong>, guided by patient-reported symptoms and clinical
+                        judgment.
+                    </p>
+
+                    <p>
+                        My work explores <strong>sensorized knee sleeves</strong> that monitor knee biomechanics
+                        and physiology during exercise. By capturing changes in flexion–extension kinematics,
+                        thermal patterns related to inflammation, and bioimpedance signatures of tissue
+                        composition, these systems aim to enable
+                        <strong>data-driven, adaptive rehabilitation programs</strong> that proactively adjust
+                        exercise dosage before symptoms flare.
+                    </p>
+
+                    <!-- 1. Polymer Optical Fiber Sleeve -->
+                    <section class="main">
+                        <header class="major">
+                            <h2>Polymer Optical Fiber Sleeve for Knee Flexion–Extension Estimation</h2>
+                        </header>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    In this project, a soft sleeve integrates <span class="highlight-role">five Polymer
+                                        Optical Fiber (POF)
+                                        sensors</span>
+                                    aligned with the Langer’s lines of the skin around the knee. This layout maximizes
+                                    conformity
+                                    to the anatomy and sensitivity to joint motion.
+                                </p>
+
+                                <p>
+                                    During treadmill walking, data were collected simultaneously from the POF sleeve and
+                                    a
+                                    motion capture system. A <span class="highlight-role">BiLSTM (Bidirectional Long
+                                        Short-Term Memory)
+                                        network</span>
+                                    was trained to estimate sagittal-plane knee flexion–extension angles using the
+                                    five POF
+                                    voltage signals, with motion capture serving as the reference.
+                                </p>
+
+                                <p>
+                                    Beyond overall accuracy, we systematically analyzed:
+                                </p>
+                                <ul>
+                                    <li>How performance changes with <span class="highlight-role">different numbers and
+                                            subsets of POF
+                                            sensors</span>,</li>
+                                    <li>The <span class="highlight-role">distribution of estimation error across the
+                                            gait cycle</span> and
+                                        across participants.</li>
+                                </ul>
+
+                                <p>
+                                    This work was published in <span class="highlight-role">IEEE Transactions on Neural
+                                        Systems and
+                                        Rehabilitation Engineering (TNSRE)</span>
+                                    and received the <span class="highlight-role">2024 Best Paper Award</span>.
+                                </p>
+
+                                <p>
+                                    <!-- Replace with the real DOI or link -->
+                                    <a href="https://doi.org/10.1109/TNSRE.2025.3540708" target="_blank">
+                                        Read the IEEE TNSRE paper →
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="col-12">
+                                <!-- Video block -->
+                                <h3>Demo Video</h3>
+                                <video controls style="width:100%; max-width:900px; display:block; margin:0 auto;">
+                                    <source src="videos/POF_Sleeve.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. Thermal Sensor Sleeve -->
+                    <section class="main">
+                        <header class="major">
+                            <h2>Thermal Sensor Sleeve for Monitoring Inflammation-Related Knee Temperature Distribution
+                                Patterns</h2>
+                        </header>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    The second sleeve focuses on <strong>skin temperature distribution</strong> over the
+                                    lateral knee
+                                    as a proxy for inflammation. A wearable prototype integrating an array of
+                                    thermistors has been designed to monitor
+                                    the knee surface temperature pattern during and after exercise.
+                                </p>
+
+                                <p>
+                                    Thermal camera recordings are used as a reference to estimate the
+                                    <strong>Heat Distribution Index (HDI)</strong>, which summarizes spatial temperature
+                                    distribution
+                                    over the joint. The wearable array is designed to reproduce HDI estimates in real
+                                    time,
+                                    enabling continuous monitoring of how exercise bouts modulate local inflammation.
+                                </p>
+
+                                <p>
+                                    Through a combination of experiments and simulations, we studied:
+                                </p>
+                                <ul>
+                                    <li>The impact of <strong>sensor count</strong> on HDI estimation accuracy,</li>
+                                    <li>The effect of <strong>sensor placement and misplacement</strong> on error, and
+                                    </li>
+                                    <li>How well the sleeve tracks <strong>pre/post-exercise changes</strong> and
+                                        recovery trends.</li>
+                                </ul>
+
+                                <!-- Optional future link -->
+                                <p>
+                                    This work was published in <span class="highlight-role">IEEE Access</span>.
+                                </p>
+
+                                <p>
+                                    <!-- Replace with the real DOI or link -->
+                                    <a href="https://doi.org/10.1109/ACCESS.2025.3581491" target="_blank">
+                                        Read the IEEE Access paper →
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <h3>Thermal Sensor Sleeve Overview</h3>
+                                <img src="images/TS.png"
+                                    alt="Wearable thermal sensor sleeve and mobile app showing HDI heatmap"
+                                    style="width:100%; max-width:960px; display:block; margin:0 auto; border-radius:8px;">
+                                <p style="text-align:center; margin-top:10px; font-size:0.9em; color:#555;">
+                                    Wearable thermal sensor sleeve with 12-thermistor array and real-time HDI
+                                    reconstruction on the mobile app.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. Bioimpedance + IMU Sleeve -->
+                    <section class="main">
+                        <header class="major">
+                            <h2>Bioimpedance and IMU Sleeve for Multimodal Knee Monitoring</h2>
+                        </header>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <p>
+                                    The third sleeve combines single and multi-frequency <strong>bioimpedance
+                                        (BioZ)</strong>
+                                    and
+                                    <strong>inertial measurement units (IMUs)</strong> to jointly characterize knee
+                                    joint impedance and
+                                    movement. Bioimpedance provides information about tissue composition and fluid
+                                    shifts around the joint,
+                                    while IMUs capture segment kinematics during walking and exercise.
+                                </p>
+
+                                <p>
+                                    By integrating these modalities in a single wearable platform, the system aims to:
+                                </p>
+                                <ul>
+                                    <li>Relate <strong>changes in BioZ</strong> to acute responses to activity and
+                                        potential swelling,</li>
+                                    <li>Track <strong>flexion–extension angles and spatiotemporal gait
+                                            parameters</strong> via IMUs, and</li>
+                                    <li>Lay the groundwork for <strong>personalized, closed-loop adjustment</strong> of
+                                        exercise intensity
+                                        based on both biomechanics and physiology.</li>
+                                </ul>
+
+                                <p style="margin-top:10px;">
+                                    This work was presented as a poster at
+                                    <span class="highlight-role">IEEE Body Sensor Networks (BSN) 2025</span>, Los Angeles (Nov 3–5), titled
+                                    <span style="font-size:0.9em; color:#555;">
+                                        "Wearable Bioimpedance Sleeve with Integrated IMUs for Adaptive Knee
+                                        Osteoarthritis Rehabilitation".<br>
+                                        Authors: Benito Lorenzo Pugliese, Federico De Carlo, Andrea Orlando, Mattia
+                                        Ghibaudo,
+                                        Marco Caruso, Michelle Bruneau, Danilo Demarchi, Alessandra Angelucci,
+                                        Andrea Aliverti, Adam Tenforde, Paolo Bonato.
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="col-12">
+                                <h3>Demo Video</h3>
+                                <video controls style="width:100%; max-width:960px; display:block; margin:0 auto;">
+                                    <!-- Placeholder – update with your real file -->
+                                    <source src="videos/BioZ_20s_overlay.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </section>
+
+            </div>
+
+            <!-- Footer (copy from your template if you want) -->
+            <footer id="footer">
+                <p>&copy; Benito Lorenzo Pugliese. All rights reserved.</p>
+            </footer>
+
+    </div>
+
+    <!-- Scripts (same as index.html) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

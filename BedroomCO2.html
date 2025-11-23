@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Overnight Bedroom CO₂ Monitoring – Personal Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">← Back to Portfolio</a>
+        </header>
+
+        <!-- Main content -->
+        <div id="main">
+            <section id="bedroom-co2" class="main">
+                <h2>Overnight Bedroom CO₂ Monitoring</h2>
+
+                <p>
+                    This project started from a simple question:
+                    <strong>how good is the air quality in my bedroom overnight</strong> when I sleep
+                    with the window closed and no active ventilation?
+                    Rather than guessing, I built a small data logger to measure it.
+                </p>
+
+                <p>
+                    I used a <strong>Sensirion SCD30</strong> CO₂ sensor and an <strong>ESP32</strong> board,
+                    programmed to periodically sample CO₂ concentration, temperature, and humidity and
+                    store the data locally on a <strong>microSD card</strong>. The whole prototype runs on
+                    a breadboard and can be powered from USB, making it easy to place on a nightstand.
+                </p>
+
+                
+
+                <!-- Data section -->
+                <section class="main">
+                    <header class="major">
+                        <h2>Data</h2>
+                    </header>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                The plot below shows data from one full night. At time <strong>0 hours</strong>
+                                the window was open and the measured CO₂ level was around
+                                <strong>600 ppm</strong>, which is typical outdoor air for Boston.
+                                I then closed the window and went to sleep.
+                            </p>
+
+                            <p>
+                                After about <strong>1 hour</strong>, the CO₂ concentration passed
+                                <strong>1000 ppm</strong>, a commonly used threshold indicating that indoor
+                                air quality is starting to degrade. Overnight, CO₂ kept rising and reached
+                                approximately <strong>1400 ppm</strong>.
+                            </p>
+
+                            <p>
+                                Around <strong>9 hours</strong>, I opened the window again.
+                                As fresh air entered the room, the CO₂ level dropped rapidly back toward
+                                baseline, clearly visible in the plot. 
+                            </p>
+
+                            <img src="images/CO2Full.png"
+                                alt="Overnight CO₂, temperature, and humidity in a closed bedroom"
+                                style="width:100%; max-width:1000px; display:block; margin:0 auto; border-radius:8px;">
+
+                            <p style="text-align:center; margin-top:10px; font-size:0.9em; color:#555;">
+                                Left: ESP32 + SCD30 CO₂ sensor and microSD card adapter on a breadboard,
+                                used to log CO₂, temperature, and humidity overnight. Right: Overnight CO₂, temperature, and humidity in the bedroom.
+                                CO₂ rises from ~600 ppm to ~1400 ppm with the window closed,
+                                then drops quickly when the window is opened again around 9 hours.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>&copy; Benito Lorenzo Pugliese. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

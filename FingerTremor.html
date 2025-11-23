@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Wearable Finger Tremor Monitor – Parkinson’s Disease</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">← Back to Portfolio</a>
+        </header>
+
+        <!-- Main content -->
+        <div id="main">
+            <section id="finger-tremor" class="main">
+                <h2>Wearable Finger Tremor Monitor for Parkinson’s Disease</h2>
+
+                <p>
+                    Tremor is one of the most recognizable motor symptoms of
+                    <strong>Parkinson’s disease (PD)</strong> and can significantly affect fine-motor
+                    function and quality of life. Clinically, tremor severity is usually assessed
+                    through brief in-clinic exams and ordinal rating scales, which provide only a
+                    coarse snapshot of a highly dynamic symptom.
+                </p>
+
+                <p>
+                    This project explores a <strong>wearable system to quantify finger tremor</strong>
+                    using lightweight accelerometers mounted on the fingertips and a modified
+                    Shimmer3 sensing platform. The goal was to obtain high-resolution,
+                    quantitative tremor metrics during a protocol designed to test the effectiveness
+                    of a <strong>mechanical vibration–based intervention</strong> for tremor reduction.
+                </p>
+
+                <p>
+                    I was responsible for the <strong>hardware modification, firmware development,
+                        data acquisition pipeline, and data analysis</strong>, adapting an existing research device
+                    to a new multi-sensor configuration suitable for clinical studies.
+                </p>
+
+                <!-- System overview section -->
+                <section class="main">
+                    <header class="major">
+                        <h2>System Overview</h2>
+                    </header>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                The system is built around a <span class="highlight-role">Shimmer3</span> unit,
+                                which was extended using the <span class="highlight-role">Proto3 expansion board</span>
+                                to access unused microcontroller pins and interface with additional sensors.
+                                Three small wired accelerometers were mounted on the index, middle, and ring
+                                fingertips to capture finger tremor independently.
+                            </p>
+
+                            <p>
+                                On the firmware side, I <strong>modified the Shimmer3 firmware</strong> to:
+                            </p>
+                            <ul>
+                                <li>Read synchronized data from <strong>three additional accelerometer
+                                        channels</strong>,</li>
+                                <li>Store the combined data locally for offline analysis.</li>
+                            </ul>
+
+                        </div>
+
+                        <p style="margin-top:10px;">
+                            This work was presented as a poster at
+                            <span class="highlight-role">International Congress of Parkinson’s Disease and Movement
+                                Disorders
+                                (MDS) 2023</span>, Copenhagen (Denmark), August 27-31, titled
+                            <span style="font-size:0.9em; color:#555;">
+                                "Use of a Wearable Vibration-Based Device for the Treatment of Parkinson’s Disease
+                                Tremor".<br>
+                                Authors: Stephen C, Fabara E, Parisi F, Pugliese BL, Vergara-Diaz G, Gochyyev P,
+                                Davanzo A, Carballo D, Pina K, Luu T, Bonato P.
+                            </span>
+                        </p>
+
+                        <!-- Static figure instead of video -->
+                        <div class="col-12">
+                            <h3>Prototype in Use</h3>
+                            <img src="images/Encora.png"
+                                alt="Finger-mounted accelerometer system connected to a modified Shimmer3 platform for tremor quantification in Parkinson's disease"
+                                style="width:50%; max-width:900px; display:block; margin:0 auto; border-radius:8px;">
+
+                            <p style="text-align:center; margin-top:10px; font-size:0.9em; color:#555;">
+                                Prototype setup: three fingertip accelerometers connected to a modified
+                                Shimmer3 unit via the Proto3 expansion board, used to quantify finger
+                                tremor in a participant with Parkinson’s disease.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>&copy; Benito Lorenzo Pugliese. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts (same as index.html) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

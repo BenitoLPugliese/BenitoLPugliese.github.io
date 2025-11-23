@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Sensorized Insole – GRF &amp; CoP Estimation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">← Back to Portfolio</a>
+        </header>
+
+        <!-- Main content -->
+        <div id="main">
+
+            <section class="main">
+                <header class="major">
+                    <h2>Sensorized Insole for Ground Reaction Force &amp; Center of Pressure Estimation</h2>
+                </header>
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <p>
+                            In this project, I designed and built a <strong>wearable sensorized insole</strong> capable
+                            of
+                            estimating <strong>3D Ground Reaction Forces (GRFs)</strong> and
+                            <strong>Center of Pressure (CoP)</strong> during gait.
+                            The system integrates a <strong>custom pressure-sensing insole</strong> and an
+                            <strong>on-board inertial measurement unit</strong>, embedded into a compact
+                            3D-printed enclosure attached to the shoe.
+                        </p>
+
+                        <p>
+                            To enable field-ready gait analysis, the prototype continuously acquires pressure and
+                            acceleration data, streams it through a custom firmware pipeline, and reconstructs
+                            GRF and CoP using a <strong>Bidirectional LSTM network</strong> trained on synchronized
+                            force-plate data.
+                        </p>
+
+                        <p>Beyond overall performance, we analyzed:</p>
+
+                        <ul>
+                            <li>how estimation accuracy changes with <strong>pressure-only</strong> vs.
+                                <strong>pressure + acceleration</strong> inputs,
+                            </li>
+                            <li>whether a <strong>low-density, low-cost insole</strong> can approximate
+                                laboratory-grade force plate measurements,</li>
+                            <li>the feasibility of using this system for
+                                <strong>outside-the-lab gait assessment</strong>.
+                            </li>
+                        </ul>
+
+                        <p>
+                            This work was published as a <strong>paper and oral presentation at IEEE STAR 2024</strong>,
+                            <br>
+                            <em>“A Sensorized Insole to Estimate Ground Reaction Forces and Center of Pressure During
+                                Gait”.</em>
+                        </p>
+                        <p>
+                            <!-- Paper link -->
+                            <a href="https://doi.org/10.1109/STAR62027.2024.10636002" target="_blank">
+                                Read the IEEE STAR 2024 conference paper →
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="col-12">
+                        <h3>Demo Video</h3>
+                        <video controls style="width:100%; max-width:900px; display:block; margin:0 auto;">
+                            <source src="videos/Insole_GRF_LeftOnly_6to10s_withDevice.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <p>&copy; Benito Lorenzo Pugliese. All rights reserved.</p>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
