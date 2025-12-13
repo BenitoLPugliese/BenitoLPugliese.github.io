@@ -30,40 +30,52 @@
                     <div class="col-12">
 
                         <p>
-                            In this project, I designed and built a <strong>wearable sensorized insole</strong> capable
-                            of
-                            estimating <strong>3D Ground Reaction Forces (GRFs)</strong> and
-                            <strong>Center of Pressure (CoP)</strong> during gait.
-                            The system integrates a <strong>custom pressure-sensing insole</strong> and an
-                            <strong>on-board inertial measurement unit</strong>, embedded into a compact
-                            3D-printed enclosure attached to the shoe.
+                            I designed and built a wearable sensorized insole capable of estimating 3D
+                            <span class="highlight-role">Ground Reaction Forces (GRFs)</span> and
+                            <span class="highlight-role">Center of Pressure (CoP)</span> during gait.
+                            The system integrates a custom pressure-sensing insole and an on-board inertial
+                            measurement unit, packaged in a compact 3D-printed enclosure attached to the shoe.
                         </p>
 
                         <p>
-                            To enable field-ready gait analysis, the prototype continuously acquires pressure and
-                            acceleration data, streams it through a custom firmware pipeline, and reconstructs
-                            GRF and CoP using a <strong>Bidirectional LSTM network</strong> trained on synchronized
-                            force-plate data.
+                            To enable <span class="highlight-role">field-ready gait analysis</span>, the device
+                            continuously acquires pressure and
+                            acceleration data, streams them through a custom firmware pipeline, and reconstructs
+                            GRF and CoP using a <span class="highlight-role">bidirectional LSTM model</span> trained on
+                            synchronized force-plate measurements.
                         </p>
 
-                        <p>Beyond overall performance, we analyzed:</p>
+                        <div class="role-block">
+                            <div class="highlight-role">My Contributions:</div>
+                            <ul class="role-list">
+                                <li>Designed the wearable hardware architecture (pressure insole + IMU + enclosure)</li>
+                                <li>Developed firmware for continuous data acquisition and storage</li>
+                                <li>Built the end-to-end data pipeline from sensing to inference</li>
+                                <li>Trained and evaluated a bidirectional LSTM for GRF and CoP estimation</li>
+                                <li>Conducted validation against laboratory-grade force plates</li>
+                            </ul>
+                        </div>
 
-                        <ul>
-                            <li>how estimation accuracy changes with <strong>pressure-only</strong> vs.
-                                <strong>pressure + acceleration</strong> inputs,
+                        <div class="role-block">
+                            Beyond overall accuracy, this work investigated:
+                        <ul class="role-list">
+                            <li>how estimation performance changes with pressure-only vs. pressure + inertial inputs,
                             </li>
-                            <li>whether a <strong>low-density, low-cost insole</strong> can approximate
-                                laboratory-grade force plate measurements,</li>
-                            <li>the feasibility of using this system for
-                                <strong>outside-the-lab gait assessment</strong>.
-                            </li>
+                            <li>whether a low-density, low-cost insole can approximate force-plate measurements,</li>
+                            <li>the feasibility of out-of-the-lab gait assessment using wearable sensing.</li>
                         </ul>
+                        </div>
 
                         <p>
-                            This work was published as a <strong>paper and oral presentation at IEEE STAR 2024</strong>,
-                            <br>
-                            <em>“A Sensorized Insole to Estimate Ground Reaction Forces and Center of Pressure During
-                                Gait”.</em>
+                            <span class="highlight-role">Outcome: </span>
+                            Demonstrated that wearable pressure–IMU fusion combined with machine learning can reliably
+                            estimate GRF and CoP in real-world walking scenarios.
+                        </p>
+
+                        This work was published as a <strong>paper and oral presentation at IEEE STAR 2024</strong>,
+                        <br>
+                        <em>“A Sensorized Insole to Estimate Ground Reaction Forces and Center of Pressure During
+                            Gait”.</em>
                         </p>
                         <p>
                             <!-- Paper link -->

@@ -24,53 +24,36 @@
                 <h2>Wearable Finger Tremor Monitor for Parkinson’s Disease</h2>
 
                 <p>
-                    Tremor is one of the most recognizable motor symptoms of
-                    <strong>Parkinson’s disease (PD)</strong> and can significantly affect fine-motor
-                    function and quality of life. Clinically, tremor severity is usually assessed
-                    through brief in-clinic exams and ordinal rating scales, which provide only a
-                    coarse snapshot of a highly dynamic symptom.
+                    <span class="highlight-role">Purpose: </span>
+                    Tremor is one of the most recognizable motor symptoms of Parkinson’s disease (PD)
+                    and is typically assessed through brief clinical exams and ordinal rating scales,
+                    which provide only coarse snapshots of a highly dynamic symptom. This project explored
+                    a wearable system to obtain high-resolution, quantitative finger tremor metrics during
+                    intervention studies.
                 </p>
 
                 <p>
-                    This project explores a <strong>wearable system to quantify finger tremor</strong>
-                    using lightweight accelerometers mounted on the fingertips and a modified
-                    Shimmer3 sensing platform. The goal was to obtain high-resolution,
-                    quantitative tremor metrics during a protocol designed to test the effectiveness
-                    of a <strong>mechanical vibration–based intervention</strong> for tremor reduction.
+                    <span class="highlight-role">System Overview: </span>
+                    A lightweight multi-sensor wearable was developed by extending a Shimmer3 research platform
+                    to support additional fingertip-mounted accelerometers, enabling independent tremor capture
+                    from multiple fingers during controlled clinical protocols.
                 </p>
 
-                <p>
-                    I was responsible for the <strong>hardware modification, firmware development,
-                        data acquisition pipeline, and data analysis</strong>, adapting an existing research device
-                    to a new multi-sensor configuration suitable for clinical studies.
+                <div class="role-block">
+  <div class="highlight-role">My Role:</div>
+  <ul class="role-list">
+                                    <li>Extended an existing wearable research platform to a multi-sensor finger-level configuration</li>
+                                    <li>Modified firmware to acquire and synchronize data from additional accelerometer channels</li>
+                                    <li>Designed the data acquisition and offline analysis pipeline for tremor quantification</li>
+                                    <li>Supported human-subject studies evaluating vibration-based tremor intervention</li>
+                                </ul>
+                            </div>
+
+                            <p>
+                    <span class="highlight-role">Outcome: </span>
+                    The system enabled high-resolution tremor metrics beyond standard clinical scales and was successfully deployed
+                     in a clinical study setting.
                 </p>
-
-                <!-- System overview section -->
-                <section class="main">
-                    <header class="major">
-                        <h2>System Overview</h2>
-                    </header>
-
-                    <div class="row">
-                        <div class="col-12">
-                            <p>
-                                The system is built around a <span class="highlight-role">Shimmer3</span> unit,
-                                which was extended using the <span class="highlight-role">Proto3 expansion board</span>
-                                to access unused microcontroller pins and interface with additional sensors.
-                                Three small wired accelerometers were mounted on the index, middle, and ring
-                                fingertips to capture finger tremor independently.
-                            </p>
-
-                            <p>
-                                On the firmware side, I <strong>modified the Shimmer3 firmware</strong> to:
-                            </p>
-                            <ul>
-                                <li>Read synchronized data from <strong>three additional accelerometer
-                                        channels</strong>,</li>
-                                <li>Store the combined data locally for offline analysis.</li>
-                            </ul>
-
-                        </div>
 
                         <p style="margin-top:10px;">
                             This work was presented as a poster at

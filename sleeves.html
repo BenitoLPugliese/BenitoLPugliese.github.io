@@ -24,28 +24,35 @@
                     <h2>Sensorized Sleeves for Adaptive Knee OA Rehabilitation</h2>
 
                     <p>
-                        Knee osteoarthritis (OA) is among the leading causes of disability worldwide.
-                        It is characterized by joint pain, stiffness, and inflammation, which progressively
-                        limit mobility and reduce quality of life. While there is currently no cure,
-                        <strong>physical activity and exercise</strong> are the cornerstone of conservative management,
-                        helping slow disease progression and maintain function.
+                        Knee osteoarthritis (OA) is among the leading causes of disability worldwide, characterized by
+                        pain,
+                        stiffness, and inflammation that progressively limit mobility and quality of life.
+                        While there is no cure, physical activity remains a cornerstone of conservative management,
+                        helping preserve function and slow disease progression.
                     </p>
 
                     <p>
-                        However, the relationship between exercise and symptoms is delicate:
-                        insufficient activity limits benefits, whereas over-exercise can worsen pain, swelling,
-                        and inflammation. Today, the “optimal” dose of physical activity is usually found
-                        through <strong>trial and error</strong>, guided by patient-reported symptoms and clinical
-                        judgment.
+                        However, the relationship between exercise and symptoms is delicate: insufficient activity
+                        limits benefits, while over-exercise can exacerbate pain, swelling, and inflammation.
+                        In clinical practice, identifying the “optimal” exercise dose often relies on trial and error,
+                        guided primarily by patient-reported symptoms and clinician judgment.
                     </p>
 
                     <p>
-                        My work explores <strong>sensorized knee sleeves</strong> that monitor knee biomechanics
-                        and physiology during exercise. By capturing changes in flexion–extension kinematics,
-                        thermal patterns related to inflammation, and bioimpedance signatures of tissue
-                        composition, these systems aim to enable
-                        <strong>data-driven, adaptive rehabilitation programs</strong> that proactively adjust
-                        exercise dosage before symptoms flare.
+                        My work focuses on <span class="highlight-role">sensorized knee sleeves</span> that objectively
+                        monitor knee
+                        biomechanics and physiology during exercise. By capturing changes in <span
+                            class="highlight-role">flexion–extension kinematics</span>,
+                        <span class="highlight-role">thermal patterns related to inflammation</span>, and <span
+                            class="highlight-role">bioimpedance signatures of tissue
+                            composition</span>, these systems aim to enable
+                        <span class="highlight-role">data-driven, adaptive rehabilitation programs</span> that adjust
+                        exercise dosage proactively before symptoms flare.
+                    </p>
+
+                    <p>
+                        The following projects explore three complementary sensing approaches integrated into wearable
+                        knee sleeves.
                     </p>
 
                     <!-- 1. Polymer Optical Fiber Sleeve -->
@@ -57,36 +64,35 @@
                         <div class="row">
                             <div class="col-12">
                                 <p>
-                                    In this project, a soft sleeve integrates <span class="highlight-role">five Polymer
-                                        Optical Fiber (POF)
-                                        sensors</span>
-                                    aligned with the Langer’s lines of the skin around the knee. This layout maximizes
-                                    conformity
-                                    to the anatomy and sensitivity to joint motion.
+                                    <span class="highlight-role">Purpose: </span>
+                                    Estimate knee flexion–extension during gait using soft, textile-compatible polimer
+                                    optical fiber (POF) sensors.
                                 </p>
 
                                 <p>
-                                    During treadmill walking, data were collected simultaneously from the POF sleeve and
-                                    a
-                                    motion capture system. A <span class="highlight-role">BiLSTM (Bidirectional Long
-                                        Short-Term Memory)
-                                        network</span>
-                                    was trained to estimate sagittal-plane knee flexion–extension angles using the
-                                    five POF
-                                    voltage signals, with motion capture serving as the reference.
+                                    <span class="highlight-role">System: </span>
+                                    Sleeve integrating five POF sensors aligned with anatomical structures.
+                                    LSTM-based estimation model trained against motion-capture ground truth.
                                 </p>
 
+                                <div class="role-block">
+                                    <div class="highlight-role">My Contributions:</div>
+                                    <ul class="role-list">
+                                        <li>Contributed to hardware integration, including power regulation and sensor
+                                            conditioning</li>
+                                        <li>Designed data collection pipeline</li>
+                                        <li>Conducted human-subject validation (MoCap reference)</li>
+                                        <li>Developed LSTM estimation model</li>
+                                        <li>Ran analyses on sensor count, placement combinations, and per-cycle error
+                                        </li>
+                                    </ul>
+                                </div>
+
                                 <p>
-                                    Beyond overall accuracy, we systematically analyzed:
+                                    <span class="highlight-role">Outcome: </span>
+                                    High-accuracy angle estimation from soft, textile-compatible POF sensors,
+                                    demonstrating promise for rehabilitation monitoring.
                                 </p>
-                                <ul>
-                                    <li>How performance changes with <span class="highlight-role">different numbers and
-                                            subsets of POF
-                                            sensors</span>,</li>
-                                    <li>The <span class="highlight-role">distribution of estimation error across the
-                                            gait cycle</span> and
-                                        across participants.</li>
-                                </ul>
 
                                 <p>
                                     This work was published in <span class="highlight-role">IEEE Transactions on Neural
@@ -117,39 +123,48 @@
                     <!-- 2. Thermal Sensor Sleeve -->
                     <section class="main">
                         <header class="major">
-                            <h2>Thermal Sensor Sleeve for Monitoring Inflammation-Related Knee Temperature Distribution
-                                Patterns</h2>
+                            <h2>Thermal Sensor Sleeve for Monitoring Knee Inflammation via Temperature Distribution</h2>
                         </header>
 
                         <div class="row">
                             <div class="col-12">
                                 <p>
-                                    The second sleeve focuses on <strong>skin temperature distribution</strong> over the
-                                    lateral knee
-                                    as a proxy for inflammation. A wearable prototype integrating an array of
-                                    thermistors has been designed to monitor
-                                    the knee surface temperature pattern during and after exercise.
+                                    <span class="highlight-role">Purpose: </span>
+                                    Quantify lateral knee temperature distribution during exercise and recovery as a
+                                    proxy of inflammation
+                                    for knee osteoarthritis rehabilitation.
                                 </p>
 
-                                <p>
-                                    Thermal camera recordings are used as a reference to estimate the
-                                    <strong>Heat Distribution Index (HDI)</strong>, which summarizes spatial temperature
-                                    distribution
-                                    over the joint. The wearable array is designed to reproduce HDI estimates in real
-                                    time,
-                                    enabling continuous monitoring of how exercise bouts modulate local inflammation.
-                                </p>
+                                <div class="role-block">
+                                    <span class="highlight-role">System: </span>A 12-sensor thermal array integrated into a textile sleeve, featuring:                                    
+                                    <ul class="role-list">
+                                        <li>Precision thermistors arranged in an anatomically informed layout</li>
+                                        <li>Multithreaded BLE firmware with real-time streaming</li>
+                                        <li>GUI for acquisition and visualization</li>
+                                        <li>Calibration pipelines and thermal compensation strategies</li>
+                                        <li>Embedded data-logging modes</li>
+                                    </ul>
+                                </div>
+
+                                <div class="role-block">
+                                    <div class="highlight-role">My Contributions:</div>
+                                    <ul class="role-list">
+                                        <li>Architected the full system (hardware integration, firmware, GUI,
+                                            calibration)</li>
+                                        <li>Designed sensor layout and mounting within the textile</li>
+                                        <li>Developed BLE acquisition and synchronization logic</li>
+                                        <li>Conducted human-subject experiments and validated against a FLIR thermal
+                                            camera</li>
+                                        <li>Ran simulations on sensor placement, misalignment tolerance, and sensor
+                                            density</li>
+                                    </ul>
+                                </div>
 
                                 <p>
-                                    Through a combination of experiments and simulations, we studied:
+                                    <span class="highlight-role">Outcome: </span>
+                                    Demonstrated feasibility of monitoring inflammation-related thermal patterns using a
+                                    using a wearable sensing system, with accuracy comparable to thermal cameras.
                                 </p>
-                                <ul>
-                                    <li>The impact of <strong>sensor count</strong> on HDI estimation accuracy,</li>
-                                    <li>The effect of <strong>sensor placement and misplacement</strong> on error, and
-                                    </li>
-                                    <li>How well the sleeve tracks <strong>pre/post-exercise changes</strong> and
-                                        recovery trends.</li>
-                                </ul>
 
                                 <!-- Optional future link -->
                                 <p>
@@ -179,38 +194,53 @@
                     <!-- 3. Bioimpedance + IMU Sleeve -->
                     <section class="main">
                         <header class="major">
-                            <h2>Bioimpedance and IMU Sleeve for Multimodal Knee Monitoring</h2>
+                            <h2>Bioimpedance and Dual IMUs Sleeve for Multimodal Knee Monitoring</h2>
                         </header>
 
                         <div class="row">
                             <div class="col-12">
                                 <p>
-                                    The third sleeve combines single and multi-frequency <strong>bioimpedance
-                                        (BioZ)</strong>
-                                    and
-                                    <strong>inertial measurement units (IMUs)</strong> to jointly characterize knee
-                                    joint impedance and
-                                    movement. Bioimpedance provides information about tissue composition and fluid
-                                    shifts around the joint,
-                                    while IMUs capture segment kinematics during walking and exercise.
+                                    <span class="highlight-role">Purpose: </span>
+                                    Monitor tissue impedance and knee flexion–extension during rehabilitation to
+                                    quantify tissue recovery and joint loading.
                                 </p>
 
+                                <div class="role-block">
+                                    <span class="highlight-role">System: </span>A textile-integrated knee sleeve featuring:
+                                    <ul class="role-list">                            
+                                        <li>Single- and multifrequency BioZ front end for tissue impedance monitoring
+                                        </li>
+                                        <li>Dual IMUs (shank + thigh) for joint kinematics</li>
+                                        <li>FSM-based BLE firmware with buffering and flash storage</li>
+                                        <li>Real-time on board kinematic estimation</li>
+                                        <li>Textile integration of electonics</li>
+                                        <li>GUI for synchronized acquisition and visualization</li>
+                                    </ul>
+                                </div>
+
+                                <div class="role-block">
+                                    <div class="highlight-role">My Contributions:</div>
+                                    <ul class="role-list">
+                                        <li>Architected the end-to-end system (hardware integration, firmware, GUI,
+                                            calibration)</li>
+                                        <li>Designed the PCB and integrated BioZ analog front end</li>
+                                        <li>Developed multithreaded BLE firmware with finite-state machine</li>
+                                        <li>Implemented onboard flash logging and real-time joint-angle estimation</li>
+                                        <li>Integrated electronics into textile sleeve</li>
+                                        <li>Conducted human-subject validation against motion capture</li>
+                                    </ul>
+                                </div>
+
                                 <p>
-                                    By integrating these modalities in a single wearable platform, the system aims to:
+                                    <span class="highlight-role">Outcome: </span>
+                                    Accurate joint-angle estimation and impedance tracking in real settings,
+                                    enabling longitudinal monitoring of knee tissue response to exercise.
                                 </p>
-                                <ul>
-                                    <li>Relate <strong>changes in BioZ</strong> to acute responses to activity and
-                                        potential swelling,</li>
-                                    <li>Track <strong>flexion–extension angles and spatiotemporal gait
-                                            parameters</strong> via IMUs, and</li>
-                                    <li>Lay the groundwork for <strong>personalized, closed-loop adjustment</strong> of
-                                        exercise intensity
-                                        based on both biomechanics and physiology.</li>
-                                </ul>
 
                                 <p style="margin-top:10px;">
                                     This work was presented as a poster at
-                                    <span class="highlight-role">IEEE Body Sensor Networks (BSN) 2025</span>, Los Angeles (Nov 3–5), titled
+                                    <span class="highlight-role">IEEE Body Sensor Networks (BSN) 2025</span>, Los
+                                    Angeles (Nov 3–5), titled
                                     <span style="font-size:0.9em; color:#555;">
                                         "Wearable Bioimpedance Sleeve with Integrated IMUs for Adaptive Knee
                                         Osteoarthritis Rehabilitation".<br>
